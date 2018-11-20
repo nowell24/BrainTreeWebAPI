@@ -1,10 +1,11 @@
-﻿using Braintree;
+﻿using System;
+using Braintree;
 
 namespace BrainTreeWebAPI
 {
     public class Program
     {
-        public string GetToken(string custID)
+        private string GetToken(string custID)
         {
             var gateway = new BraintreeGateway
             {
@@ -24,5 +25,9 @@ namespace BrainTreeWebAPI
 
         }
 
+        internal string GetToken(Func<string> toString)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

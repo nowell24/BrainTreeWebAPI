@@ -16,14 +16,14 @@ namespace BrainTreeWebAPI
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            yield return new Program().GetToken("659377549");
+            return new string[] { "value1", "value2" };
         }
 
         // GET api/<controller>/5
         [HttpGet("{id}")]
         public string Get(int id)
         {
-            return "value";
+            return new Program().GetToken(id.ToString);
         }
 
         // POST api/<controller>
