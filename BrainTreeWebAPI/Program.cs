@@ -19,6 +19,8 @@ namespace BrainTreeWebAPI
                 .UseStartup<IStartup>()
                 .Build();
 
+
+
             host.Run();
         }
         private string GetToken(string custID)
