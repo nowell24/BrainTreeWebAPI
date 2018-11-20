@@ -4,12 +4,7 @@ namespace BrainTreeWebAPI
 {
     public class Program
     {
-        public static void Main(string[] args)
-        {
-            
-        }
-
-        private string GetToken(string custID)
+        public string GetToken(string custID)
         {
             var gateway = new BraintreeGateway
             {
